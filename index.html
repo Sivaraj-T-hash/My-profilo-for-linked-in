@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIVARAJ MYPROFILO</title>
+    <link rel="stylesheet" href="index.css">
+    <script>
+        function toggleSidebar() {
+            document.querySelector(".sidebar").classList.toggle("active");
+        }
+    </script>
+</head>
+<body>
+    <div class="menubar">
+        <button class="menu-button" onclick="toggleSidebar()">☰</button>
+        <h1>MY PROFILE</h1>
+        <button><a class="b1" href="contactme.html">HELP!</a></button>
+    </div>
+    <div class="sidebar">
+        <h2 class="nav">Navigation</h2>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="certificates.html">Certifications</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contactme.html">Contact Me</a></li>
+            <li><a href="connect.html">Connect With Me</a></li>
+        </ul>
+    </div>
+    
+    <div class="main-content">
+        <div class="content">
+            <h2>Dashboard Overview</h2>
+            <p>Welcome to My Website Here you will find all the details about me.</p>
+            <section id="about">
+  <div class="about-container">
+    <img src="profile_square.jpg" alt="Sivaraj T" class="profile-pic">
+
+    <div class="about-text">
+  <h2>About Me</h2>
+  <p>
+    Hello! I'm <strong>Sivaraj T</strong> from <strong>Tiruvannamalai</strong>.
+    I'm currently pursuing my <strong>B.Tech in Information Technology</strong> at 
+    <strong>Velammal Engineering College</strong>. I’m passionate about <strong>coding</strong> 
+    and enjoy <strong>developing web applications</strong>. I'm always excited to learn 
+    and build new things that make a difference.
+  </p>
+
+  <!-- Achievements Section -->
+  <h3>Achievements</h3>
+  <ul class="achievements">
+    <li>Completed <strong>Programming in C</strong> with hands-on problem-solving experience</li>
+    <li>Earned <strong>NPTEL Certification</strong> in <strong>Problem Solving through Programming in C</strong></li>
+    <li>Solved <strong>1000+ problems</strong> in <strong>SkillRack</strong></li>
+  </ul>
+
+  <div class="about-buttons">
+    <a href="resume.pdf" class="btn" download>Download My Resume</a>
+    <a href="contactme.html" class="btn">Contact Me</a>
+  </div>
+</div>
+
+  </div>
+</section>
+
+            
+        </div>
+    </div>
+</body>
+</html>

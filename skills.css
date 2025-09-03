@@ -1,0 +1,172 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #e3f2fd;
+}
+
+/* Navbar */
+.menubar {
+    width: 100%;
+    background-color: #0d47a1;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.menu-button {
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.menubar button {
+    margin-right: 20px;
+    padding: 10px 15px;
+    background-color: #ff9800;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.b1{
+    text-decoration: none;
+    color: #fefdff;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    background-color: #1565c0;
+    color: white;
+    padding: 20px;
+    margin-top: 60px;
+    position: fixed;
+    height: 100%;
+    top: 0;
+    left: -250px;
+    transition: left 0.3s;
+}
+
+.sidebar.active {
+    left: 0;
+}
+
+.sidebar h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 10px;
+    text-align: left;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+.sidebar ul li:hover {
+    background-color: #ff9800;
+    cursor: pointer;
+}
+
+/* Main Content */
+.main-content {
+    padding: 20px;
+    width: 100%;
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Skills Section */
+.myskill {
+    background-color: #ffffff;
+    width: 350px;
+    padding: 30px 20px;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+.myskill h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #0d47a1;
+}
+
+/* Skill Buttons */
+.myskill button {
+    width: 240px;
+    height: 50px;
+    margin: 12px 0;
+    border-radius: 8px;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Button hover effect */
+.myskill button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* Individual button colors */
+.b1 { background-color: #306998; }       /* Python */
+.b2 { background-color: #2c3e50; }       /* C */
+.b3 { background-color: #00599C; }       /* C++ */
+.b4 { background-color: #e34c26; }       /* HTML */
+.b5 { background-color: #2965f1; }       /* CSS */
+.b6 { background-color: #d83b01; }       /* MS Office */
+
+.b1:hover { background-color: #4682b4; }
+.b2:hover { background-color: #3e4e60; }
+.b3:hover { background-color: #007acc; }
+.b4:hover { background-color: #ff5722; }
+.b5:hover { background-color: #1e4ed8; }
+.b6:hover { background-color: #ff6a00; }
+.help-btn {
+  display: inline-block;
+  background-color: orange;
+  color: white;           /* <-- makes text white */
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none;  /* removes underline */
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.help-btn:hover {
+  background-color: darkorange;
+}

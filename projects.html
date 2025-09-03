@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SIVARAJ MYPROFILO</title>
+  <link rel="stylesheet" href="projects.css">
+  <script>
+    function toggleSidebar() {
+        document.querySelector(".sidebar").classList.toggle("active");
+    }
+  </script>
+</head>
+<body>
+  <!-- Navbar -->
+  <div class="menubar">
+      <button class="menu-button" onclick="toggleSidebar()">☰</button>
+      <h1>MY PROFILO</h1>
+      <button><a class="b1" href="index.html">HOME</a></button>
+  </div>
+
+  <!-- Sidebar -->
+  <div class="sidebar">
+      <h2 class="nav">Navigation</h2>
+      <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="certificates.html">Certificates</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contactme.html">Contact Me</a></li>
+          <li><a href="connect.html">Connect With Me</a></li>
+      </ul>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main-content">
+    <section class="projects" id="projects">
+      <h2>My Projects</h2>
+      <div class="project-grid">
+        
+        <!-- Project 1 -->
+        <a href="DOC-20250226-WA0028..pdf" download class="project-card">
+          <p>Database Management System using Python</p>
+        </a>
+
+      </div>
+    </section>
+  </div>
+</body>
+</html>
