@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIVARAJ MYPROFILO</title>
+    <link rel="stylesheet" href="skills.css"> <!-- FIXED -->
+    <script>
+        function toggleSidebar() {
+            document.querySelector(".sidebar").classList.toggle("active");
+        }
+    </script>
+</head>
+<body>
+    <div class="menubar">
+        <button class="menu-button" onclick="toggleSidebar()">☰</button>
+        <h1>MY PROFILE</h1>
+        <a href="contactme.html" class="help-btn">HELP!</a>
+    </div>
+
+    <div class="sidebar">
+        <h2 class="nav">Navigation</h2>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="certificates.html">Certifications</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contactme.html">Contact Me</a></li>
+            <li><a href="connect.html">Connect With Me</a></li>
+        </ul>
+    </div>
+    
+    <div class="main-content">
+        <div class="content">
+            <section id="about">
+              <div class="about-container">
+                
+                <div class="myskill"> <!-- FIXED class name -->
+                    <h2>MY SKILLS</h2>
+                    
+                    <div class="python">
+                        <button class="b1">Python</button>
+                    </div>
+                    <div class="c">
+                        <button class="b2">C Programming</button>
+                    </div>
+                    <div class="cpp"> <!-- FIXED -->
+                        <button class="b3">C++</button>
+                    </div>
+                    <div class="html"> <!-- FIXED -->
+                        <button class="b4">HTML</button>
+                    </div>
+                    <div class="css"> <!-- FIXED -->
+                        <button class="b5">CSS</button>
+                    </div>
+                    <div class="office"> <!-- FIXED -->
+                        <button class="b6">Microsoft Office</button>
+                    </div>
+                </div>
+
+              </div>
+            </section>
+        </div>
+    </div>
+</body>
+</html>
